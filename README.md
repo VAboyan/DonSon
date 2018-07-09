@@ -1,4 +1,4 @@
-# evrika_test
+# DonSon
 
 1. `npm install`
 2. `npm run dev` - for dev
