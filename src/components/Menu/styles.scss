@@ -1,0 +1,133 @@
+.container-one {
+  width: 100%;
+  @include flex(flex-start, center);
+  text-transform: uppercase;
+}
+
+.container-one-content {
+  @include flex(center, flex-start, column, nowrap);
+  width: 1335px;
+  background: url("../static/images/fon.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 480px;
+}
+
+.container-one-content-fon {
+  @include flex(flex-start, flex-start);
+  width: 1100px;
+}
+
+.container-one-content-menu {
+  @include flex();
+  margin-top: -22px;
+}
+
+.item {
+  @include flex(center);
+  height: 44px;
+  background-color: $mm-dark-grey;
+  color: $mm-white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.item:after {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 2px;
+  background-color: $mm-dark-grey;
+  margin-left: 3px;
+}
+
+.item:before {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 2px;
+  background-color: $mm-dark-grey;
+  margin-right: 3px;
+}
+
+.item:hover {
+  justify-content: space-between;
+  background-color: $mm-yellow;
+  color: $mm-dark-grey;
+}
+
+.container-one-content-title {
+  @include flex(center, center);
+  height: 66px;
+  width: 1094px;;
+  background-color: $mm-blue;
+  color: $mm-white;
+  font-size: 29px;
+}
+
+.container-one-content-banner {
+  background-color: $mm-white;
+  width: 658px;
+  height: 370px;
+}
+
+.container-one-content-banner_text-1 {
+  color: $mm-blue;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 16px 19px;
+}
+
+.container-one-content-banner_text-2 {
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.container-one-content-banner_text-3 {
+  padding: 13px 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.container-one-content-banner_introduction {
+  border-left: 2px solid #000 ;
+  margin-left: 30px;
+  padding-left: 8px;
+  font-size: 16px;
+  text-transform: none;
+  color: gray;
+}
+.container-one-content-banner_introduction-1 {
+  padding: 9px 0;
+}
+
+.container-one-content-banner_button{
+  @include flex(center, center, column);
+}
+
+.container-one-content-banner_button img {
+  padding: 10px;
+}
+
+.container-one-content-fon_matrac {
+  margin: -70px -117px;
+  position: relative;
+}
+
+.header-top-right-button:hover ~ .arrow {
+  background-color: $mm-yellow;
+}
+
+.arrow {
+  @include flex(center, center);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 3px;
+
+  & > svg {
+    @include svg($mm-textBlack, 50%, 50%);
+  }
+}
+

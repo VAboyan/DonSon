@@ -1,0 +1,11 @@
+.footer {
+  @include flex(center, center);
+  width: 100%;
+  padding: 100px 100px;
+}
+
+.footer-container {
+  @include flex(flex-start, space-between, row, wrap);
+  width: 100%;
+  max-width: 1240px;
+}
